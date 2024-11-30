@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>Library Book Catalog </title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="username" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <button>Log in</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Library Catalog Dashboard</h1>
+        <div class="mb-3">
+            
+            <input type="text" class="form-control" id="filter" placeholder="Filter by title or author">
+        </div>
+        <table class="table table-striped">
+            <script src="js/script.js"></script>
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="LibraryCatalog/images/pic1.png" alt="Book Cover" style="width: 50px; height: auto;"></td>
+                    <td>Book Title 1</td>
+                    <td>Author Name</td>
+                    <td>Fiction</td>
+                    <td>2020</td>
+                    <td>
+                        <button class="btn btn-info btn-sm">View</button>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+             <!-- More rows as needed -->
+            </tbody>
+            </table>
+        </table>
+        <button class="btn btn-success">Add New Book</button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
